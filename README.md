@@ -64,17 +64,6 @@ python-s3-backup/
 
 ---
 
-## ⚙️ Tecnologias
-
-* Python 3.8+
-* boto3
-* Docker
-* GitHub Actions
-* logging
-* python-dotenv
-
----
-
 ## 🔑 Configuração
 
 Crie um arquivo `.env`:
@@ -106,15 +95,6 @@ pip install -r requirements.txt
 
 ```bash
 python app/main.py
-```
-
----
-
-## 🐳 Execução com Docker
-
-```bash
-docker build -t s3-backup .
-docker run --env-file .env s3-backup
 ```
 
 ---
@@ -187,16 +167,6 @@ jobs:
 ```bash
 pytest tests/
 ```
-
----
-
-## 📈 Roadmap
-
-* [x] Upload básico S3
-* [x] Estrutura modular
-* [ ] Monitoramento em tempo real
-* [ ] Interface web
-* [ ] Deploy em cloud
 
 ---
 
