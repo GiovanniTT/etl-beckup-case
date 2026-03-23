@@ -39,29 +39,6 @@ flowchart LR
     E -->|Sim| F[Delete Local]
     E -->|Erro| G[Retry + Log]
 ```
-
----
-
-## 🏗️ Estrutura do Projeto
-
-```bash
-python-s3-backup/
-│
-├── app/
-│   ├── core/
-│   ├── services/
-│   ├── utils/
-│   ├── handlers/
-│   └── main.py
-│
-├── logs/
-├── tests/
-├── .env
-├── requirements.txt
-├── Dockerfile
-└── README.md
-```
-
 ---
 
 ## 🔑 Configuração
@@ -95,31 +72,6 @@ pip install -r requirements.txt
 
 ```bash
 python app/main.py
-```
-
----
-
-## 🔁 CI/CD (GitHub Actions)
-
-```yaml
-name: CI
-
-on: [push]
-
-jobs:
-  build:
-    runs-on: ubuntu-latest
-
-    steps:
-      - uses: actions/checkout@v3
-
-      - name: Setup Python
-        uses: actions/setup-python@v4
-        with:
-          python-version: 3.10
-
-      - run: pip install -r requirements.txt
-      - run: pytest
 ```
 
 ---
