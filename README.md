@@ -132,12 +132,6 @@ git push origin feature/nova-feature
 
 ---
 
-## 📄 Licença
-
-MIT License
-
----
-
 ## 👨‍💻 Autor
 
 **Giovanni Micheletti**
